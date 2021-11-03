@@ -14058,8 +14058,18 @@ const modals = () => {
     });
   }
 
+  const MODAL_TIMER_MS = 60000;
+
+  function showModalByTime(selector, time) {
+    setTimeout(() => {
+      document.querySelector(selector).style.display = 'block';
+      document.body.classList.add('modal-open');
+    }, time);
+  }
+
   bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_close');
   bindModal('.phone_link', '.popup', '.popup_close');
+  showModalByTime('.popup', MODAL_TIMER_MS);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (modals);
