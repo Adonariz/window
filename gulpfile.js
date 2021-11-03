@@ -5,6 +5,7 @@ const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
 const dist = "./dist/";
+// const dist = "E:/Install/Software/openserver/full 5.3.7/OpenServer/domains/window";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
