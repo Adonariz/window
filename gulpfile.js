@@ -4,8 +4,9 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-const dist = "./dist/";
-// const dist = "E:/Install/Software/openserver/full 5.3.7/OpenServer/domains/window";
+// const dist = "./dist/"; // для дева
+// const dist = "E:/Install/Software/openserver/full 5.3.7/OpenServer/domains/window"; // для использования OpenServer
+const dist = './docs/'; // для github pages
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
